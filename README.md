@@ -1,2 +1,3 @@
-# bi_learning
-My journey to learn bi basics
+# sql
+My journey to learn sql basics
+
