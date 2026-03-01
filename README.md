@@ -1,3 +1,4 @@
-# What I am learning right now:
+# My learning notes 
+What I am learning right now:
 sql
 
