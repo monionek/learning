@@ -24,5 +24,24 @@ select user_id, sum(revenue) as rev from events where( event_type = 'purchase') 
 select country, sum(revenue) as rev from users u left join events e on e.user_id = u.id group by  country;
 -- 13. first event of every user
 select distinct on (user_id) user_id, event_date from events order by user_id, event_date
-
-    
+-- 14. differnce in days from first login to first purchase
+with logged_in as (select user_id, min(event_date) as first_login_date
+	from events
+	where event_type = 'login' 
+	group by user_id
+),
+purchase_dates as (select user_id, min(event_date) as first_purchase_date
+	from events
+	where event_type = 'purchase'
+	group by user_id
+)
+select l.user_id, l.first_login_date, first_purchase_date, (first_purchase_date -  first_login_date) as difference_in_days from logged_in l left join purchase_dates p on l.user_id = p.user_id; 
+-- 15. what percentage of revenue are pro users
+with total_rev as (select sum(revenue) as total_revenue from events)
+select sum(case when u.plan = 'pro' then e.revenue end)
+    as pro_rev, tr.total_revenue as total_rev,
+    sum(case when u.plan = 'pro' then e.revenue end) / tr.total_revenue * 100 as pro_rev
+from users u
+join events e on e.user_id = u.id
+cross join total_rev tr
+group by tr.total_revenue;   
