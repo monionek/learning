@@ -1,3 +1,3 @@
-# sql
-My journey to learn sql basics
+# What I am learning right now:
+sql
 
