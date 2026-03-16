@@ -1,3 +1,4 @@
-# sql
-Learning right now: sql (window functions)
+# My learning notes 
+What I am learning right now:
+sql
 
