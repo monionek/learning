@@ -1,3 +1,3 @@
 # sql
-My journey to learn sql basics
+Learning right now: sql (window functions)
 
