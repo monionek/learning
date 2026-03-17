@@ -32,4 +32,5 @@ from events e
 join first_event f
 on e.user_id = f.user_id
 )
-select days_since_signup, count(distinct user_id) from helper group by days_since_signup order by days_since_signup 
+select days_since_signup, count(distinct user_id) from helper group by days_since_signup order by days_since_signup
+
