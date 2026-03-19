@@ -23,13 +23,17 @@ DAU (Daily Active Users) measures the number of unique users who are active on a
 In this project, a user is considered active if they perform any action, such as login, view, or purchase.
 
 DAU helps determine whether the application is “alive,” but without additional context (e.g., total user base), it does not provide much insight on its own.
-    <img src='resources/dau.png'>
+
+<p align="center"> <img src="resources/dau.png" alt="dau"/> </p>
+
 2. MAU (Monthly Active Users)
 
 MAU (Monthly Active Users) measures the number of unique users active within a month.
 
 Similar to DAU, MAU alone does not reveal much. However, when combined with DAU, it becomes much more meaningful and allows deeper analysis of user behavior.
-    <img src='resources/mau.png'>
+
+<p align="center"> <img src="resources/mau.png" alt="mau"/> </p>
+
 3. Stickiness
 
 Stickiness indicates how frequently users return to the application.
