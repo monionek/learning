@@ -40,8 +40,9 @@ DAU/MAU
 
 This metric helps evaluate how engaging the application is.
 
+<p align="center"> <img src="resources/stickiness.png" alt="Stickiness"/> </p>
+
 In this example, stickiness ranges between 7–8%, which suggests that:
-<p align="center"> <img src="resources/stickiness.png" alt="Stickiness" width="600"/> </p>
 
 users are not returning frequently,
 
