@@ -39,7 +39,7 @@ It is calculated as the ratio of DAU to MAU:
 DAU/MAU
 
 This metric helps evaluate how engaging the application is.
-    ![alt text](stickiness.png)
+    <img src='resources/stickiness.png'>
 
 In this example, stickiness ranges between 7–8%, which suggests that:
 
