@@ -53,3 +53,54 @@ users are not returning frequently,
 the application has low engagement,
 
 further analysis is needed to identify potential issues (e.g., UX, value proposition, competition).
+
+4. Revenue per Day
+
+shows how much money the application generates each day.
+
+It can be used to:
+
+monitor overall financial performance,
+
+identify trends (growth or decline),
+
+detect periods of strong or weak revenue.
+
+<p align="center"> <img src="resources/rev_per_day.png" alt="rev_per_day"/> </p>
+
+5. ARPU (Average Revenue per User)
+
+measures how much revenue is generated per user on average.
+
+It is calculated as:
+
+Total Revenue/Number of Users
+
+ARPU can be useful for:
+
+evaluating monetization effectiveness,
+
+comparing performance across segments (e.g., countries, plans),
+
+estimating how many users are needed to reach profitability.
+
+However, ARPU can be misleading in some cases.
+
+For example:
+
+if there are 10 users,
+
+and only 1 user spends 100 while the others spend 0,
+
+then ARPU = 10.
+
+This may suggest decent performance, even though most users are not paying.
+
+<p align="center"> <img src="resources/arpu.png" alt="arpu"/> </p>
+
+In this example, ARPU is around 10 per user, which can be used for further analysis, such as:
+
+estimating how many users are required to achieve profitability,
+
+understanding overall monetization efficiency.
+
