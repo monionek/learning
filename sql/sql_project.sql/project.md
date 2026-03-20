@@ -104,3 +104,29 @@ estimating how many users are required to achieve profitability,
 
 understanding overall monetization efficiency.
 
+6. Conversion rate
+
+shows the percentage of users who purchased a product after signing up.
+
+In this project, the dataset is simplified and does not include a separate sign-up table.
+Because of that, I assume that a user’s first login represents their sign-up moment.
+
+Using this approach, the conversion rate is approximately 36%.
+
+<p align="center"> <img src="resources/conversion_rate.png" alt="conversion_rate"/> </p>
+
+A conversion rate of 36% means that slightly more than one-third of users who log in eventually make a purchase.
+
+This suggests that:
+
+a significant portion of users do not convert into paying customers,
+
+there may be friction in the user journey (e.g., UX, pricing, or value proposition).
+
+When combined with an ARPU of around 10, this may indicate that:
+
+revenue is unevenly distributed,
+
+a smaller group of users generates most of the revenue,
+
+while many users generate little or no revenue.
