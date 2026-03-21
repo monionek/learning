@@ -130,3 +130,29 @@ revenue is unevenly distributed,
 a smaller group of users generates most of the revenue,
 
 while many users generate little or no revenue.
+
+7. User Retention
+
+measures the percentage of users who return to the application and perform any action after their first login.
+
+Retention can be analyzed across different time windows, such as:
+
+Day 1 retention (D1)
+Day 7 retention (D7)
+
+This metric helps us understand how willing users are to come back and whether the product is used on a daily basis or over a longer period of time.
+
+In this example:
+
+Day 1 retention is around 6%,
+
+Day 7 retention is around 9%.
+<p align="center"> <img src="resources/retention_day_1.png" alt="retention_day_1"/> </p> <p align="center"> <img src="resources/retention_day_7.png" alt="retention_day_7"/> </p>
+
+Overall retention is low, which suggests that most users do not return shortly after their first interaction.
+
+Interestingly, Day 7 retention is higher than Day 1 retention, which may indicate that:
+
+the product is not designed for daily usage,
+users return occasionally rather than regularly,
+the application may provide value over a longer time horizon rather than immediate engagement.

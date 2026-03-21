@@ -39,3 +39,25 @@ first_user_purchase as (
 )
 select count(case when fup.first_purchase >= ful.first_login then 1 end) * 1.0 / count(ful.user_id) as conversion_rate from first_user_login ful left join first_user_purchase fup on fup.user_id = ful.user_id;
 -- conversion rate 
+7.
+with first_login_day as (
+	select
+		user_id,
+		min(event_date) as login_day
+	from events
+	where event_type = 'login'
+	group by user_id
+)
+select count(distinct case when e.event_date = fld.login_day + 1 then e.user_id end) * 1.0 / count(distinct fld.user_id) as day1_retention from events e join first_login_day fld on fld.user_id = e.user_id;
+--day 1 retention
+
+with first_login_day as (
+	select
+		user_id,
+		min(event_date) as login_day
+	from events
+	where event_type = 'login'
+	group by user_id
+)
+select count(distinct case when e.event_date = fld.login_day + 7 then e.user_id end) * 1.0 / count(distinct fld.user_id) as day7_retention from events e join first_login_day fld on fld.user_id = e.user_id;
+--day 7 retention
